@@ -7,6 +7,7 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 import com.github.race.user.Base;
+import com.github.race.user.User;
 
 
 @ApplicationPath("v1")
@@ -17,6 +18,7 @@ public class App extends Application {
 	public App() {
 		System.out.println("Starting");
 		appAppContent.add(Base.class);
+		appAppContent.add(User.class);
 		System.out.println("done");
 	}
 	
